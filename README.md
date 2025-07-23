@@ -8,7 +8,7 @@ FOSS4G 2025 KANSAIで受講したハンズオンの内容を深く掘り下げ�
 uvがインストールされていることを前提にしています。
 
 ```
-$  uv run -m http.server 8000
+$  uv run server.py 8000
 ```
 
 ブラウザで http://localhost:8000 にアクセスすると地図が見られます。
