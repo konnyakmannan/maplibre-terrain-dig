@@ -17,7 +17,7 @@ function makeTerrainRGBProtocol( protocolName = 'terrainrgb' ){
           const m = ( r * 65536 + g * 256 + b ) * 0.1 - 10000;
           if (m > -100) {
 
-            const n2 = Math.max( (m + 100) * 10, 0 );
+            const n2 = Math.max( (m + 30) * 10, 0 );
             imageData.data.set( [ 0xff & n2 >> 16, 0xff & n2 >> 8, 0xff & n2, a ], i );
           } else {
 
