@@ -33,6 +33,13 @@ const map = new maplibregl.Map( {
           id: 'gsistd',
           type: 'raster',
           source: 'gsistd'
+        },
+        {
+          id: 'hills',
+          type: 'hillshade',
+          source: 'nagasakidem',
+          layout: {visibility: 'visible'},
+          paint: {'hillshade-shadow-color': '#473B24'}
         }
       ],
       terrain: {
